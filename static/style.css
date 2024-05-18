@@ -1,0 +1,114 @@
+
+
+
+body {
+   
+    background-image: url("/static/default.png"); 
+    font-family: Arial, sans-serif;
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: transparent 40%;
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+    
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: transparent 1%;
+}
+
+
+.rainbow-button {
+    background: linear-gradient(to right, rgb(229, 75, 75), rgb(219, 162, 55), rgb(179, 179, 9), rgb(21, 169, 21), rgb(86, 86, 233), rgb(171, 67, 245), violet);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: rainbow-animation 10s infinite; 
+    backdrop-filter: blur (1000000000000000000000000px);
+}
+
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.rainbow-button:hover {
+    
+    transform: scale();
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.weather-info {
+    text-align: center;
+}
+
+.weather-description,
+.weather-temperature,
+.weather-humidity,
+.weather-wind-speed {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.weather-description {
+    font-weight: bold;
+}
+
+.weather-temperature::before {
+    content: "🌡️ ";
+}
+
+.weather-humidity::before {
+    content: "💧 "; 
+}
+
+.weather-wind-speed::before {
+    content: "🌬️ ";
+}
+
