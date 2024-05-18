@@ -1,4 +1,4 @@
-Weather Forecast Application
+Weather Forecast web-Application
 
 This Weather Forecast Application is a simple web application built using Flask, a lightweight web framework for Python. The application fetches current weather data and next day weather forecast for a specified city using the OpenWeatherMap API and displays it on a web page.
 
